@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills</title>
+  <link rel="stylesheet" href="About.css" />
+</head>
+<body>
+
+  <section class="faq-section">
+    <h1 class="faq-title">My Skills</h1>
+
+    <div class="faq">
+      <button class="faq-question">HTML</button>
+      <div class="faq-answer">
+        <p>Semantic, accessible, and SEO-friendly HTML5 structure for responsive web layouts.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">CSS & Tailwind</button>
+      <div class="faq-answer">
+        <p>Expert in modern CSS, responsive design, Flexbox, Grid, and utility-first Tailwind CSS.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">JavaScript</button>
+      <div class="faq-answer">
+        <p>Proficient in ES6+, DOM manipulation, async functions, and event handling.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">React.js</button>
+      <div class="faq-answer">
+        <p>Building SPAs with components, hooks, props, state management, and routing.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">GSAP & Framer Motion</button>
+      <div class="faq-answer">
+        <p>Creating smooth, interactive, scroll-triggered animations for outstanding UI/UX.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Locomotive.js & Shery.js</button>
+      <div class="faq-answer">
+        <p>Advanced scroll effects and magnetic elements with creative 3D transitions.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const buttons = document.querySelectorAll('.faq-question');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        const answer = button.nextElementSibling;
+        answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + "px";
+      });
+    });
+  </script>
+
+</body>
+</html>
