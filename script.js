@@ -46,32 +46,18 @@ tl.add(()=>{
 Shery.mouseFollower();
 Shery.makeMagnet(".nleft h2, .nright a");
 
-const questions = document.querySelectorAll('.faq-question');
-
-questions.forEach((question) => {
-  question.addEventListener('click', () => {
-    // Find the answer inside the same .faq container
-    const answer = question.parentElement.querySelector('.faq-answer');
-
-    if (answer.style.display === 'none' || answer.style.display === '') {
-      answer.style.display = 'block';
-    } else {
-      answer.style.display = 'none';
-    }
-  });
-});
-
 
 Shery.hoverWithMediaCircle(".faq-question",{
   images:["html.webp","css.webp","js.webp","react.webp","framermotion.webp","gsap.webp","shery.webp","locomotive.webp"]
 })
 
-const menuIcon = document.getElementById('menu-icon');
-const nright = document.querySelector('.nright');
 
-menuIcon.addEventListener('click', () => {
-  nright.classList.toggle('active');
+
+
+Shery.imageEffect(".right", {
+  style: 3,
+  scrollSnapping: true,
+  scrollSpeed: 6,
+  touchSpeed: 6,
+  damping: 7,
 });
-
-
-  
