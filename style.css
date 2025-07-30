@@ -282,6 +282,13 @@ border: 5px solid red;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    .project-card a{
+      border: 1px solid grey;
+      background-color: green;
+      color: white;
+      text-decoration: none;
+      padding: 0.5vw;
+    }
 
     .project-card:hover {
       transform: translateY(-10px);
@@ -306,6 +313,7 @@ border: 5px solid red;
     }
 
     .project-content p {
+      margin: 5vw;
       font-size: 0.95rem;
       line-height: 1.6;
       color: gainsboro;
